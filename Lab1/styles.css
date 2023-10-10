@@ -1,0 +1,88 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 32px;
+}
+
+/* Task 1 - using Float*/
+
+.task1 {
+    height: 900px;
+    width: 100%;
+}
+
+.task1 .block1, .task1 .block4  {
+    height: 20%;
+    width: 100%;
+}
+
+.task1 .block2 {
+    height: 60%;
+    width: 75%;
+    float: left;
+}
+
+.task1 .block3 {
+    height: 60%;
+    width: 25%;
+    float: left;
+}
+
+.task1 .clear {
+    clear: both;
+}
+
+.task1 .block3 img, .task1 .block4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.task1 .block1 {
+    background-color: #5d33dc;
+}
+
+.task1 .block2 {
+    background-color: #36a237;
+}
+
+.task1 .block1, .task1 .block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task 2 - using Grid*/
+
+.task2 {
+    height: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.task2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.task2 .block1, .task2 .block4 {
+    grid-column: 1/3;
+}
+
+.task2 .block1, .task2 .block2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task2 .block1 {
+    background-color: #5d33dc;
+}
+
+.task2 .block2 {
+    background-color: #36a237;
+}
